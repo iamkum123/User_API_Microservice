@@ -1,0 +1,11 @@
+{
+    "Endpoints":{
+        "CovidStatus":{
+           "BaseURL": "https://covid-193.p.rapidapi.com/",
+           "endpoint": "statistics",
+           "ApiKey": "fecaf35dd3mshd41d4331cb7de52p1df6d7jsnbba51a6e3214",
+           "Host": "covid-193.p.rapidapi.com"
+        }
+    },
+    "ApiTimeoutSec": 5000
+}

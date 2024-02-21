@@ -1,5 +1,6 @@
 const express = require ('express');
 const routes = require('./routes/route'); // import the routes
+const nconf = require("nconf");
 
 const app = express();
 
@@ -14,6 +15,12 @@ var allowCrossDomain = function(req, res, next) {
 app.use(allowCrossDomain);
 
 app.use('/', routes); //to use the routes
+
+//require('dotenv').load();
+
+nconf.use('memory');
+nconf.argv().env().file({file: './config/development.json'});
+console.log('development');
 
 const listener = app.listen(process.env.PORT || 3000, () => {
     console.log('Your app is listening on port ' + listener.address().port)

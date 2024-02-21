@@ -18,9 +18,23 @@ class LoginController{
          router.route('/omg').get(async function(req,res,next){
             req.body;
             var a = await self.loginService.login(req.query);
+
+            var request = {
+                url: nconf.get('Endpoints:login:baseURL') +
+                nconf
+            }
             
              //console.log(a  );
              res.status(200).send(a[0]);
+             this.restApiWrapper.call();
+        });
+
+        router.route('/getCovidStatus').get(async function(req,res,next){
+
+            var response = await self.loginService.getCovidStatus();
+
+            res.status(200).send(response);
+
         });
     }
 
