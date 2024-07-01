@@ -1,10 +1,25 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: User_API_Microservice
   annotations:
     github.com/project-slug: iamkum123/User_API_Microservice
+    backstage.io/techdocs-ref: value
 spec:
-  type: other
-  lifecycle: unknown
-  owner: team-a
+  type: openapi
+  lifecycle: production
+  owner: backstage
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: api-1
+  description: API 1 description.
+  owner: backstage
+spec:
+  lifecycle: production
+  type: openapi
+  visibility: public
+  definition:
+    type: url
+    url: https://petstore.swagger.io/v2/swagger.json
