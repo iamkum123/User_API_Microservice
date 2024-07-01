@@ -5,7 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: iamkum123/User_API_Microservice
 spec:
-  type: API
+  type: openapi
   lifecycle: unknown
   owner: backstage
 ---
