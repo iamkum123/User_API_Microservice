@@ -4,6 +4,7 @@ metadata:
   name: User_API_Microservice
   annotations:
     github.com/project-slug: iamkum123/User_API_Microservice
+    backstage.io/techdocs-ref: value
 spec:
   type: openapi
   lifecycle: unknown
@@ -21,7 +22,7 @@ spec:
   visibility: public
   definition:
     type: url
-    url: https://api.example.com/swagger.json
+    url: https://swapi.dev/api/swagger.json
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
