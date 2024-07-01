@@ -7,7 +7,7 @@ metadata:
     backstage.io/techdocs-ref: value
 spec:
   type: openapi
-  lifecycle: unknown
+  lifecycle: production
   owner: backstage
 ---
 apiVersion: backstage.io/v1alpha1
