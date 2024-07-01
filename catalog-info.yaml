@@ -1,5 +1,5 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: API
 metadata:
   name: User_API_Microservice
   annotations:
@@ -15,68 +15,13 @@ kind: API
 metadata:
   name: api-1
   description: API 1 description.
-  owner: dev-team
-spec:
-  lifecycle: experimental
-  type: openapi
-  visibility: public
-  definition:
-    type: url
-    url: https://swapi.dev/api/swagger.json
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: api-2
-  description: API 2 description.
-  owner: dev-team
-spec:
-  lifecycle: development
-  type: openapi
-  visibility: public
-  definition:
-    type: url
-    url: https://api.example.com/api2/swagger.json
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: api-3
-  description: API 3 description.
-  owner: dev-team
-spec:
-  lifecycle: production
-  type: openapi
-  visibility: private
-  definition:
-    type: url
-    url: https://api.example.com/api3/swagger.json
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: api-4
-  description: API 4 description.
-  owner: dev-team
+  owner: backstage
 spec:
   lifecycle: production
   type: openapi
   visibility: public
   definition:
     type: url
-    url: https://api.example.com/api4/swagger.json
----
-apiVersion: backstage.io/v1alpha1
-kind: API
-metadata:
-  name: api-5
-  description: API 5 description.
-  owner: dev-team
-spec:
-  lifecycle: development
-  type: openapi
-  visibility: public
-  definition:
-    type: url
-    url:
+    url: https://petstore.swagger.io/v2/swagger.json
+
   
